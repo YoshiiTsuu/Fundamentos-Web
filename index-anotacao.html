@@ -10,56 +10,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
     <!--Cabeçalho que vai ficar na guia!-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!--link para que consultar a aba style css-->
 </head>
+
+<!--Neste comando estamos alterando o tamanho de todos as tags "p" -->
+<!-- #Para especificar id e . para especificar a classe-->
+<!-- id é diferente de classe, id é único e só serve para uma única tag-->
 
 <body>
     <!--Corpo do programa/site-->
-    <ul>
-        <li>
+    <ul id="menu">
+        <li id = "home">
             <a href="index-anotacao.html" target="_blank"> Home</a>
         </li>
         <!--Para que o arquivo seja aberto em outra aba usa-se o target _blank-->
-        <li>
+        <li id = "contato">
             <a href="contato.html">Contato</a>
+        </li>
+        <li id = "musicas">
+            <a href="musicas.html">Músicas</a>
         </li>
     </ul>
     <!--Lista desordenada seguida por • -->
     <ol>
     </ol>
     <!--Lista ordenada por números, seguida por 1, 2, 3...-->
-    <h1>
+    <h1 class="center">
         Sobre o Yoshi 🦎
     </h1>
     <!--Tamanho do título vai diminuindo e vai de h1 até h6! sendo h6 o menor tamanho e cada título é único não pode ter mais de um header-->
-    <div>
-        <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Interessantiss quisso
-            pudia
-            ce receita de bolis, mais bolis eu num gostis. Per aumento de cachacis, eu reclamis. Si u mundo tá muito
-            paradis? Toma um mé que o mundo vai girarzis!
-
-            Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Aenean aliquam molestie leo,
-            vitae
-            iaculis nisl. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Copo
-            furadis é disculpa de bebadis, arcu quam euismod magna.
-
-            Detraxit consequat et quo num tendi nada. Casamentiss faiz malandris se pirulitá. Pra lá , depois divoltis
-            porris, paradis. Cevadis im ampola pa arma uma pindureta.
-        </p>
-        <p>
-            <!-- Criação de mais de um p para que haja quebra de linha no meu texto-->
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nam commodi dolore hic natus asperiores
-            qui,
-            doloremque facilis adipisci, quae numquam voluptate! Corporis cupiditate vero necessitatibus natus harum
-            consequuntur praesentium!
-        </p>
-
+    <div class="flex-container">
+        <div>
+            <!-- <p style="font-size:32px;"> Para que somente este parágrafo seja alterado-->
+            <p class="center b-g-w">
+                Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Interessantiss quisso
+                pudia
+                ce receita de bolis, mais bolis eu num gostis. Per aumento de cachacis, eu reclamis. Si u mundo tá muito
+                paradis? Toma um mé que o mundo vai girarzis!
+            </p>
+            <p class="p2 center b-g-w"> Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Aenean
+                aliquam
+                molestie leo,
+                vitae
+                iaculis nisl. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+                Copo
+                furadis é disculpa de bebadis, arcu quam euismod magna.
+            </p>
+            <p class="p2 b-g-w">
+                Detraxit consequat et quo num tendi nada. Casamentiss faiz malandris se pirulitá. Pra lá , depois
+                divoltis
+                porris, paradis. Cevadis im ampola pa arma uma pindureta.
+            </p>
+            <p id="p2 b-g-w">
+                <!-- Criação de mais de um p para que haja quebra de linha no meu texto-->
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nam commodi dolore hic natus
+                asperiores
+                qui,
+                doloremque facilis adipisci, quae numquam voluptate! Corporis cupiditate vero necessitatibus natus harum
+                consequuntur praesentium!
+            </p>
+        </div>
+        <div>
+            <img width="560" height="300"
+                src="http://cdn02.nintendo-europe.com/media/images/08_content_images/others_2/kidsclub/new_noe_banners/H2x1_KidsClub_ReadAndDiscover_YoshisFacts_image1280w.jpg"
+                alt="Foto do personagem Yoshi do jogo Super Mario Bros">
+        </div>
     </div>
-
-    <img width="560" height="300"
-        src="http://cdn02.nintendo-europe.com/media/images/08_content_images/others_2/kidsclub/new_noe_banners/H2x1_KidsClub_ReadAndDiscover_YoshisFacts_image1280w.jpg"
-        alt="Foto do personagem Yoshi do jogo Super Mario Bros">
     <!--No alt fica a descrição caso a imagem não seja carregada; e também api's para cego ver utilizando o alt como desxcrição da imagem-->
+    <div>
+        <h3 class="azul-c">Vídeo aleatório
+            <h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+    </div>
 </body>
+
 
 </html>
