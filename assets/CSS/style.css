@@ -6,79 +6,85 @@
 /*reseta os padrões do navegador*/
 /*alterando a cor de todo meu site*/
 body{
-    background-image:url("https://www.altoastral.com.br/media/uploads/legacy/2016/10/ilusao-otica-ouchi-3d.jpg");
+    background-color: #320054;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23320054' cx='50' cy='0' r='50'/%3E%3Cg fill='%232b1565' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%231d2575' cx='50' cy='100' r='50'/%3E%3Cg fill='%23003384' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23004191' cx='50' cy='200' r='50'/%3E%3Cg fill='%23004e9d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23005ba8' cx='50' cy='300' r='50'/%3E%3Cg fill='%230068b1' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%230074b8' cx='50' cy='400' r='50'/%3E%3Cg fill='%230081bd' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23008dc2' cx='50' cy='500' r='50'/%3E%3Cg fill='%230099c4' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300a5c6' cx='50' cy='600' r='50'/%3E%3Cg fill='%2300b1c7' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300bdc7' cx='50' cy='700' r='50'/%3E%3Cg fill='%2300c9c6' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300d4c5' cx='50' cy='800' r='50'/%3E%3Cg fill='%233edfc4' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2363eac3' cx='50' cy='900' r='50'/%3E%3Cg fill='%2382f5c2' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%239effc2' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
 }
 /*Estilos página index*/
-#menu {
+.margem{
+    width: 50px;
+  padding-right: 100px;
+}
+.menu {
     height: 50px;
-    background-color :#FFCBDB;
+    background-color :#ffcbdb7e;
+    display: flex;
+    flex-direction: row;    
+}
+.menu li {
+    margin-left: 20px;
     display: flex;
     align-items: center;
 }
-#menu li {
-    display: inline;
-    align-items: center;
-
-    
-}
-#menu li a{
+.menu li a{
     text-decoration: none;
-    padding: 50px;
-    margin: 50px;
+    padding: 20px;
+    margin: 20px;
     color:blue;
- 
 }
-#home a:hover {
+.hover a:hover {
     color: brown;
-    font-size:25px;
+    font-size:20px;
 }
-#contato a:hover{
-    color: brown;
-    font-size:25px;
+.justify{
+    text-align: justify;
 }
-#musicas a:hover{
-    color: brown;
-    font-size:25px;
+.background-White{
+    background-color:aliceblue;
 }
-#p1 {
-    color: red;
-    font-size: 34px;
-}
-.b-g-w{
-    background-color: aliceblue;
-}
-.p2{
-    color: rgb(156, 149, 49);
+.font-yellow{
+    color: rgb(121, 117, 68);''
     font-size: 24px;
-    align-items: center;
+}
+.font-blue {
+    color: blue;
+    font-size: 24px;
 }
 .flex-container{
     display: flex;
     flex-flow: row ;
     justify-content:center;
     align-items: center;
-
 }
 .flex-container>div{
     width: 100;
     margin: 15;
     text-align: center;
-    line-height: 75px;
+    /* line-height: 75px; */
     font-size: 20px;
 }
-
-    .azul-c {
-        color: blue;
-        font-size: 25px;
-        text-align: center;
-    }
-
-
-    .center {
-        text-align: center;
-    }
-
+.center{
+    display: flex;
+    justify-content: center;
+}
+.align{
+    display: flex;
+    align-items: center;
+}
 /*Estilos página contato*/
-
-
+.button{
+    background-color: lawngreen;
+    padding: 25px;
+}
+.list{
+    height: 120px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hover-img{
+    width:620px;
+    height:420px;
+}
 /*Estilos página músicas*/
